@@ -1,6 +1,6 @@
 import Home from "./component/Home";
 import WatchTrailer from "./component/WatchTrailer";
-import { Switch, Route, Link, Redirect } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 import { useState } from "react";
 import { Button } from "bootstrap";
 
@@ -9,10 +9,10 @@ const App = () => {
   const [filmSelection, setFilmSelection] = useState({});
   return (
     <>
-      <Redirect to="/">
-        <button style={{ width: "50px" }}> Home </button>
+      <Link to="/">
+        <button style={{ width: "50px" }}>Home</button>
         
-      </Redirect>
+      </Link>
       <Switch>
         <Route
           exact
