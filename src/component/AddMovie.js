@@ -5,8 +5,9 @@ const AddMovie = ({
   setMoviePosterUrl,
   setMovieRate,
   setMovieDescription,
+  setTrailer,
   setFormDisplay,
-  handleSubmit
+  handleSubmit,
 }) => {
   return (
     <Modal.Dialog className="modalDilalog">
@@ -45,6 +46,11 @@ const AddMovie = ({
             rows={3}
             placeholder="Description"
           />
+          <Form.Control className="formControl"
+           required onChange={(e) => setTrailer(e.target.value)} 
+           as="textarea" 
+           rows={2} 
+           placeholder="URL trailer" />
         </Form>
       </Modal.Body>
 

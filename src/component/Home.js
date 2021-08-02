@@ -12,7 +12,8 @@ function Home({ setFilmSelection }) {
         "A man (Jason Momoa) vows to avenge those responsible for his wife's death, while protecting his daughter, the only family he has left.",
       posterUrl:
         "https://fr.web.img3.acsta.net/pictures/21/07/12/11/38/1972167.jpg",
-      rate: 2
+      rate: 2,
+      trailer: "https://www.youtube.com/embed/NiFuJV2GLkY"
     },
 
     {
@@ -22,7 +23,8 @@ function Home({ setFilmSelection }) {
         "The world is stunned when a group of travelers arrives from the future - precisely the year 2051 - to deliver an urgent message: in 30 years, Humanity will lose a world-class war against a deadly alien species that has come destroy our civilization.",
       posterUrl:
         "https://fr.web.img5.acsta.net/pictures/21/06/22/15/09/2596029.jpg",
-      rate: 3
+      rate: 3, 
+      trailer: "https://www.youtube.com/embed/QPistcpGB8o"
     },
 
     {
@@ -32,7 +34,8 @@ function Home({ setFilmSelection }) {
         "A group of friends hiking in the Appalachians deviate from the trail and go deep into the forest where they fall prey to psychopaths who have lived in autarky for several centuries ...",
       posterUrl:
         "https://image.over-blog.com/3QKHwmbQyLnEfcZyC6jLaqwr-IA=/filters:no_upscale()/image%2F1199205%2F20210212%2Fob_649780_0519684-jpg-r-1920-1080-f-jpg-q-x-xxyx.jpg",
-      rate: 4
+      rate: 4,
+      trailer: "https://www.youtube.com/embed/ccaNMcPqpQ0"
     },
 
     {
@@ -42,7 +45,8 @@ function Home({ setFilmSelection }) {
         "In 1970, in Santa Monica, John Form, a doctor, gave his pregnant wife, Mia, a rare vintage porcelain doll as a gift for their first child. Mia places it in her collection of dolls in the room of their future child.",
       posterUrl:
         "https://i.pinimg.com/originals/9f/cc/8f/9fcc8f236fcd804676e59048a610a969.jpg",
-      rate: 5
+      rate: 5,
+      trailer: "https://www.youtube.com/embed/paFgQNPGlsg"
     },
 
     {
@@ -52,7 +56,8 @@ function Home({ setFilmSelection }) {
         "A colonial town is caught up on a hysterical witch hunt that has deadly consequences for centuries to come, and it's up to the teens of 1994 to try and end their town's curse, before it is over. too late.",
       posterUrl:
         "https://img3.cdn.cinoche.com/images/a1fd9a55f0663432fafab6698261cb3b.jpg",
-      rate: 3
+      rate: 3,
+      trailer: "https://www.youtube.com/embed/UyUuzCGblqc"
     }
   ]);
   const [rateValue, setRateValue] = useState(0);
