@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./component/Home";
+import WatchTrailer from "./component/WatchTrailer";
+import { Switch, Route, Link, Redirect } from "react-router-dom";
+import { useState } from "react";
+import { Button } from "bootstrap";
 
-function App() {
+
+const App = () => {
+  const [filmSelection, setFilmSelection] = useState({});
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Redirect to="/">
+        <button style={{ width: "50px" }}> Home </button>
+        
+      </Redirect>
+      <Switch>
+        <Route
+          exact
+          path="/"
+          render={() => <Home setFilmSelection={setFilmSelection} />}
+        />
+        <Route
+          path="/watchtrailer"
+          render={() => (
+            <WatchTrailer
+              title={filmSelection.title}
+              description={filmSelection.description}
+              trailer={filmSelection.trailer}
+            />
+          )}
+        />
+      </Switch>
+    </>
   );
-}
-
+};
 export default App;
+
